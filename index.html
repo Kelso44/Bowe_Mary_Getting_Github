@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub User Info</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-md-6 offset-md-3 text-center">
+            <h1 class="mb-4">GitHub User Info</h1>
+            <input type="text" id="username" class="form-control mb-2" placeholder="Enter GitHub Username">
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="name" value="name">
+                <label class="form-check-label" for="name">Name</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="followers" value="followers">
+                <label class="form-check-label" for="followers">Followers</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="following" value="following">
+                <label class="form-check-label" for="following">Following</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="public_repos" value="public_repos">
+                <label class="form-check-label" for="public_repos">Public Repos</label>
+            </div>
+            <button id="fetchButton" class="btn btn-primary mb-4">Get User Info</button>
+            <div id="userInfo" class="text-left"></div>
+        </div>
+    </div>
+</div>
+
+<script src="github.js"></script>
+</body>
+</html>
+
+<!-- For testing, my github username: Kelso44 -->
